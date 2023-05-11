@@ -17,7 +17,8 @@ def bubble_sort(numbs):
 
 
 def sort_lists (numb_set):
-    if isinstance(numb_set, int) :  return numb_set
+    if isinstance(numb_set, int) :
+        return numb_set
     elif (type(numb_set) != "list") :
         num_lis = list(numb_set)
         sorted_num_lst = bubble_sort(num_lis)

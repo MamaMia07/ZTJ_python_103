@@ -61,9 +61,8 @@ def find_non_unique(board):
     return rows
 
 
-
 # -----START--------
-print"\n  SUDOKU \n"
+print("\n  SUDOKU \n")
 input("")
 while True:
     game_board = np.zeros([9,9], dtype = "int")
