@@ -3,9 +3,9 @@ import time
 
 
 def bubble_sort(numbs):
-    if len(numbs) >1:
+    if len(numbs) > 1:
         n =  len(numbs)-1
-        while n > 1:
+        while n >= 1:
             for i in range(n):
                 if numbs[i] > numbs[i+1]:
                     temp = numbs[i]
@@ -17,17 +17,19 @@ def bubble_sort(numbs):
 
 
 def sort_lists (numb_set):
-    if type(numb_set) != "list":
+    if isinstance(numb_set, int) :  return numb_set
+    elif (type(numb_set) != "list") :
         num_lis = list(numb_set)
-    sorted_num_lst = bubble_sort(num_lis)
-    return sorted_num_lst
+        sorted_num_lst = bubble_sort(num_lis)
+        return sorted_num_lst
+    
     
 
 
 set_of_lists = [(),(1, 2,5,3,1,7,9,1,12,83,1,5,3,2),\
-(1,1,1,1,1,1,1,2,1,1,1), (2,2,2,2), (1,2), (2,1)]
+(1,1,1,1,1,1,1,2,1,1,1), (2,2,2,2), (1,2), (2,1), (3)]
 
-print("  BUBBLE SORT")
+print("\n BUBBLE SORT")
 input("")
 
 for lst in set_of_lists:
